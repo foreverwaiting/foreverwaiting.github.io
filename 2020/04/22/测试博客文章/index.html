@@ -365,28 +365,11 @@
 		<span id="busuanzi_container_site_uv" style='display:none'>
 			本站访客数<span id="busuanzi_value_site_uv"></span>人
 		</span>
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+		<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 		</script>
 	
 </footer>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-<script>
-	window.onload=function(){
-		var int = setInterval(fixCount, 50);  // 50ms周期检测函数
-		var pvcountOffset = 520;  // 初始化首次数据
-		var uvcountOffset = 520;
-		function fixCount() {
-			if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-				document.getElementById("#busuanzi_value_site_pv").html(parseInt(document.getElementById("#busuanzi_value_site_pv").html()) + pvcountOffset);
-				clearInterval(int);
-			}
-			if (document.getElementById("#busuanzi_container_site_pv").css("display") != "none") {
-				document.getElementById("#busuanzi_value_site_uv").html(parseInt(document.getElementById("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
-				clearInterval(int); // 停止检测
-			}
-		}
-	}
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
     </div>
     <script>
