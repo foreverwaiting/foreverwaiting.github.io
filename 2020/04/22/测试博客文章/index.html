@@ -348,7 +348,7 @@ var gitalk = new Gitalk({
   repo: 'mycomments',
   owner: 'foreverwaiting',
   admin: ['foreverwaiting'],
-  id: md5(window.location.pathname),
+  id: decodeURI(window.location.pathname),
   distractionFreeMode: true
 })
 
